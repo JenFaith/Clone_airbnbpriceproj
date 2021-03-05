@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Display AirBnB</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <link 
+      href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css'
+      rel='stylesheet' 
+    />
+    <style>
+#container {
+    width: 600px;
+    height: 400px;
+    margin: 20px 0px;
+    display: grid;
+}
+#map {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+}
+    </style>
+
+    <body>
+    <h3>mapbox test for airbnb</h3>   
+    <div id='map' style='width: 400px; height: 300px;'></div>
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic3RlcGhlbnNwaWNlciIsImEiOiJja2xzcG9sdHUxOXZ4Mm9vMDZpMWd6eWNzIn0.1Y3oUw-reXo8XF7JcjzJPw';
+    var map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/stephenspicer.cklvfyv2l0q8w27o9nu14yz21-7yajv', // style URL
+    center: [-74.5, 40], // starting position [lng, lat]
+    zoom: 9 // starting zoom
+    });
+    </script>
+  </body>
+</html>

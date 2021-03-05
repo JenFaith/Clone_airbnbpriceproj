@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pandas = "*"
+numpy = "*"
+flask = "*"
+flask-sqlalchemy = "*"
+jinja2 = "*"
+gunicorn = "*"
+matplotlib = "*"
+requests = "*"
+seaborn = "*"
+joblib = "*"
+sklearn = "*"
+compress-pickle = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
+jupyter = "*"
+ipykernel = "*"

@@ -1,2 +1,5 @@
-# Clone_airbnbpriceproj
-heroku clone
+# Airbnb App
+
+Application to predict AirBNB prices.
+
+Created by:
